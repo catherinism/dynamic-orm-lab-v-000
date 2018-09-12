@@ -59,7 +59,7 @@ end
   end
 
   def self.find_by(row)
-    sql = "SELECT * FROM #{self.table_name} LIMIT 1"
+    sql = "SELECT * FROM #{self.table_name} "
     DB[:conn].execute(sql)
   end
 
